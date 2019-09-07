@@ -23,114 +23,114 @@ matrix:
       env:
         - MATRIX_EVAL="CC=gcc-4.8 && CXX=g++-4.8"
     # works on Precise and Trusty
-    - os: linux
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-          packages:
-            - g++-5
-      env:
-         - MATRIX_EVAL="CC=gcc-5 && CXX=g++-5"
+   #- os: linux
+   #  addons:
+   #    apt:
+   #      sources:
+   #        - ubuntu-toolchain-r-test
+   #      packages:
+   #        - g++-5
+   #  env:
+   #     - MATRIX_EVAL="CC=gcc-5 && CXX=g++-5"
 
     # works on Precise and Trusty
-    - os: linux
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-          packages:
-            - g++-6
-      env:
-        - MATRIX_EVAL="CC=gcc-6 && CXX=g++-6"
+   #- os: linux
+   #  addons:
+   #    apt:
+   #      sources:
+   #        - ubuntu-toolchain-r-test
+   #      packages:
+   #        - g++-6
+   #  env:
+   #    - MATRIX_EVAL="CC=gcc-6 && CXX=g++-6"
 
     # works on Precise and Trusty
-    - os: linux
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-          packages:
-            - g++-7
-      env:
-        - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
+   #- os: linux
+   #  addons:
+   #    apt:
+   #      sources:
+   #        - ubuntu-toolchain-r-test
+   #      packages:
+   #        - g++-7
+   #  env:
+   #    - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
 
     # works on macOS 10.13
-    - os: osx
-      osx_image: xcode9.4
+   #- os: osx
+   #  osx_image: xcode9.4
     
     # works on macOS 10.14
-    - os: osx
-      osx_image: xcode10.2
+   #- os: osx
+   #  osx_image: xcode10.2
 
     # works on Precise and Trusty
-    - os: linux
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-            - llvm-toolchain-precise-3.6
-          packages:
-            - clang-3.6
-      env:
-        - MATRIX_EVAL="CC=clang-3.6 && CXX=clang++-3.6"
+   #- os: linux
+   #  addons:
+   #    apt:
+   #      sources:
+   #        - ubuntu-toolchain-r-test
+   #        - llvm-toolchain-precise-3.6
+   #      packages:
+   #        - clang-3.6
+   #  env:
+   #    - MATRIX_EVAL="CC=clang-3.6 && CXX=clang++-3.6"
 
     # works on Precise and Trusty
-    - os: linux
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-            - llvm-toolchain-precise-3.7
-          packages:
-            - clang-3.7
-      env:
-        - MATRIX_EVAL="CC=clang-3.7 && CXX=clang++-3.7"
+   #- os: linux
+   #  addons:
+   #    apt:
+   #      sources:
+   #        - ubuntu-toolchain-r-test
+   #        - llvm-toolchain-precise-3.7
+   #      packages:
+   #        - clang-3.7
+   #  env:
+   #    - MATRIX_EVAL="CC=clang-3.7 && CXX=clang++-3.7"
 
     # works on Precise and Trusty
-    - os: linux
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-            - llvm-toolchain-precise-3.8
-          packages:
-            - clang-3.8
-      env:
-        - MATRIX_EVAL="CC=clang-3.8 && CXX=clang++-3.8"
+   #- os: linux
+   #  addons:
+   #    apt:
+   #      sources:
+   #        - ubuntu-toolchain-r-test
+   #        - llvm-toolchain-precise-3.8
+   #      packages:
+   #        - clang-3.8
+   #  env:
+   #    - MATRIX_EVAL="CC=clang-3.8 && CXX=clang++-3.8"
 
     # works on Trusty
-    - os: linux
-      addons:
-        apt:
-          sources:
-            - llvm-toolchain-trusty-3.9
-          packages:
-            - clang-3.9
-      env:
-        - MATRIX_EVAL="CC=clang-3.9 && CXX=clang++-3.9"
+   #- os: linux
+   #  addons:
+   #    apt:
+   #      sources:
+   #        - llvm-toolchain-trusty-3.9
+   #      packages:
+   #        - clang-3.9
+   #  env:
+   #    - MATRIX_EVAL="CC=clang-3.9 && CXX=clang++-3.9"
 
     # works on Trusty
-    - os: linux
-      addons:
-        apt:
-          sources:
-            - llvm-toolchain-trusty-4.0
-          packages:
-            - clang-4.0
-      env:
-        - MATRIX_EVAL="CC=clang-4.0 && CXX=clang++-4.0"
+   #- os: linux
+   #  addons:
+   #    apt:
+   #      sources:
+   #        - llvm-toolchain-trusty-4.0
+   #      packages:
+   #        - clang-4.0
+   #  env:
+   #    - MATRIX_EVAL="CC=clang-4.0 && CXX=clang++-4.0"
 
     # works on Trusty
-    - os: linux
-      addons:
-        apt:
-          sources:
-            - llvm-toolchain-trusty-5.0
-          packages:
-            - clang-5.0
-      env:
-        - MATRIX_EVAL="CC=clang-5.0 && CXX=clang++-5.0"
+    #- os: linux
+    # addons:
+    #   apt:
+    #     sources:
+    #       - llvm-toolchain-trusty-5.0
+    #     packages:
+    #       - clang-5.0
+    # env:
+    #   - MATRIX_EVAL="CC=clang-5.0 && CXX=clang++-5.0"
 
 addons:
   apt:
@@ -178,13 +178,13 @@ script:
   - time make all -j 2
   - ctest -V
 before_deploy:
-  - PKGNAME="$TRAVIS_TAG-linux"
+  - PKGNAME="OpenMVG-linux"
   - tar -czf $PKGNAME.tar.gz ./
   - sha256sum $PKGNAME.tar.gz > $PKGNAME.tar.gz.sha256
 deploy:
    provider: releases
    api_key: 7f1b360cc65da8e1ea1f873b50d546ab04d64902
-   file: $TRAVIS_TAG-*.tar.gz*
+   file: OpenMVG-linux.tar.gz*
    file_glob: true
    skip_cleanup: true
    draft: true
